@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8" name="viewport" content="">
+		<title>Login Auth - STDFK</title>
+		
+	</head>
+	
+	<body>
+
+				<h2>Starsky Technology Developer FileKit</h2>
+				<p>*****************************************************************</p>
+				<h1>您的权限有限，请验证密码后继续！</h1>
+				<form>
+					准开发密码：<input type="text" name="username" id="username" placeholder="请输入准开发密码！">
+					<button type="button" onclick="loGin()">验证并登陆</button>
+				</form>
+				<br></br>
+				<h4>Copyright @2023 Starsky Technology Studios Group</h4>
+				<h4>All rights reserved!</h4>
+				<script type="text/javascript">
+			
+					function loGin(){
+						var username = document.getElementById("username").value
+						if (username=="stdfkauthpwd"){
+							window.location.href="centos.html";
+						}
+						else{
+							alert("ERROR: Server Auth Failed! ERROR CODE(0x000F701)")
+						}
+					}
+				</script>
+
+		
+	</body>
+	
+</html>
